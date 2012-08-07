@@ -2,6 +2,7 @@
 
 // Change "post" name to "news"
 // from http://new2wp.com/snippet/change-wordpress-posts-post-type-news/
+// For Kanbanery ##360887
 
 function change_post_menu_label() {
 	global $menu;
