@@ -2,7 +2,7 @@
 
 // Change "post" name to "news"
 // from http://new2wp.com/snippet/change-wordpress-posts-post-type-news/
-// For Kanbanery ##360887
+// For Kanbanery #360887
 
 function change_post_menu_label() {
 	global $menu;
@@ -30,4 +30,19 @@ function change_post_object_label() {
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
 
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'team_member',
+		array(
+			'labels' => array(
+				'name' => __( 'Team Members' ),
+				'singular_name' => __( 'Team Member' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'team'),
+		)
+	);
+}
 ?>
