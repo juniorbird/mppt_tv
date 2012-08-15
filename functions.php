@@ -44,10 +44,22 @@ function create_post_type() {
 			),
 			'public' => true,
 			'has_archive' => true,
-			'rewrite' => array('slug' => 'team'),
+			'rewrite' => array('slug' => 'team')
+		)
+	);
+	register_post_type( 'sizzle',
+		array(
+			'labels' => array(
+				'name' => __( 'Sizzles' ),
+				'singular_name' => __( 'Sizzle' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'sizzle')
 		)
 	);
 }
+
 
 
 // Put the menu items in a nice order so that it's obvious for an editor what to do
@@ -63,6 +75,7 @@ function custom_menu_order($menu_ord) {
 		'edit.php?post_type=page', // Pages
 		'edit.php', // News
 		'edit.php?post_type=team_member', // Team Members
+		'edit.php?post_type=sizzle', // Team Members
 		'separator2',
 		'upload.php', // Media
 		'separator-last', // Second separator
