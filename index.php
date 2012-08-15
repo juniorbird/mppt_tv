@@ -16,8 +16,11 @@ Licensed for unlimited use to MPPT
 */
 
 ?>
-
-
+<div id="nav">
+	<ul>
+		<?php wp_list_pages('sort_column=menu_order'); ?>
+	</ul>
+</div>
 
 <div id="container">
  
