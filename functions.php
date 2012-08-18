@@ -939,19 +939,20 @@ function create_post_type() {
 			),
 			'public' => true,
 			'has_archive' => true,
+			'rewrite' => array('slug' => 'team')
 		)
 	);
-// 	register_post_type( 'sizzle',
-// 		array(
-// 			'labels' => array(
-// 				'name' => __( 'Sizzles' ),
-// 				'singular_name' => __( 'Sizzle' )
-// 			),
-// 			'public' => true,
-// 			'has_archive' => true,
-// 			'rewrite' => array('slug' => 'sizzle')
-// 		)
-// 	);
+	register_post_type( 'sizzle',
+		array(
+			'labels' => array(
+				'name' => __( 'Sizzles' ),
+				'singular_name' => __( 'Sizzle' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'sizzle')
+		)
+	);
 }
 
 
