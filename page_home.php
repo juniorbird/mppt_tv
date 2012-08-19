@@ -19,7 +19,7 @@
  */
 
 // You can override via functions.php conditionals or define:
-// $columns = 'four';
+$columns = 'sixteen';
 get_header();
 st_before_content($columns='');
 get_template_part( 'loop', 'page' );
