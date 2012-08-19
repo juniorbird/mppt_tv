@@ -771,11 +771,6 @@ if ( !function_exists( 'st_before_content' ) ) {
 	if (is_page_template('onecolumn-page.php')) {
 	$columns = 'sixteen';
 	}
-
-	// If it's the homepage template, full-width!
-	if (is_page_template('page_home.php')) {
-	$columns = 'sixteen';
-	}
 	
 	// check to see if bbpress is installed
 	
@@ -900,12 +895,6 @@ add_filter('widget_text', 'do_shortcode');
 add_filter( 'the_excerpt', 'do_shortcode');
 add_filter('get_the_excerpt', 'do_shortcode');
 
-/**************************************************************************************************************************
-BELOW HERE ARE MY CUSTOMIZATIONS
-
-Customization start here
-**************************************************************************************************************************/
-
 // Change "post" name to "news"
 // from http://new2wp.com/snippet/change-wordpress-posts-post-type-news/
 // For Kanbanery #360887
@@ -1007,8 +996,3 @@ function edit_admin_menus() {
 	 remove_menu_page('link-manager.php'); // Remove the Links Menu  
 }
 add_action( 'admin_menu', 'edit_admin_menus' ); 
-
-// Make the home page template full-width
-if (is_page_template('page_home.php')) {
-	$columns = 'sixteen';
-	}
