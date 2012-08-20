@@ -1873,6 +1873,27 @@ img.scale-with-grid {
 
 /* @end */
 
+/*************************************************************************
+Customizations begin below
+*************************************************************************/
+
 /* Use the Font, Luke! */
 h1, h2, h3, h4, h5, h6	{
 font-family: 'Hammersmith One', sans-serif; }
+
+body {
+	background-image:url('/images/mppt_logo_big_screen.png');
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+
+#site-title:before	{
+   content:"";
+   float:left;
+   width:100px;
+   height:100px;
+   margin:0 5px 0 0;
+   background:url('/images/mppt_logo_small.png');
+
+}
+
