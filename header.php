@@ -91,7 +91,10 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri();?>/images/apple-touch-icon-114x114.png" />
 
 <link rel="pingback" href="<?php echo get_option('siteurl') .'/xmlrpc.php';?>" />
-<link rel="stylesheet" id="custom" href="<?php echo home_url() .'/?get_styles=css';?>" type="text/css" media="all" />
+<link rel="stylesheet" id="custom" href="<?php echo home_url() .'/?get_styles=css';?>" type="text/css" media="screen, print, all" />
+
+<!-- MPPT's styles -->
+<link rel="stylesheet" id="mpptstyles" href="<?php echo get_stylesheet_directory_uri();?>/mppt.css" type="text/css" media="all">
 
 <?php
 	/* 

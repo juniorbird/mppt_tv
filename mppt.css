@@ -1,0 +1,47 @@
+/*************************************************************************
+Custom styles for MPPT
+
+Copyright Wade Armstrong http://wadearmstrong.com
+All rights reserved
+
+MPPT holds a unlimited, unrestricted, non-exclusive license to this code
+*************************************************************************/
+
+/* Use the Font, Luke! */
+h1, h2, h3, h4, h5, h6	{
+font-family: 'Hammersmith One', sans-serif; }
+
+body {
+	background-image:url('/images/mppt_logo_big_screen.png');
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+
+.page-item-31 a:before{
+   content:"";
+   float:left;
+   width:100px;
+   height:100px;
+   margin:-43px 0px 0 -150px;
+   background:url('/images/mppt_logo_small.png');
+   background-repeat: no-repeat;
+}
+
+#navigation ul li a, .menu ul li a:link, .menu ul li a:visited 	{
+	color:#2f368f; 
+	background: none;
+}
+
+#navigation ul li a:hover	{
+	color:#ec3527 !important;
+}
+
+#navigation ul li 	{
+	border: 3px solid #2f368f;
+	margin-right: 20px;
+	padding-right: 20px;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
