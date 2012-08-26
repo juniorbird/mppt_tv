@@ -99,3 +99,7 @@ body {
 .home h1	{
 	color: #444;
 }
+
+.cta	{
+	padding-bottom: 10px !important;
+}
