@@ -570,7 +570,7 @@ if ( ! function_exists( 'skeleton_posted_on' ) ) :
  * @since Skeleton 1.0
  */
 function skeleton_posted_on() {
-	printf( __( '<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s', 'skeleton' ),
+	printf( __( '<span class="%1$s">Posted on</span> %2$s', 'skeleton' ),
 		'meta-prep meta-prep-author',
 		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
 			get_permalink(),
@@ -595,22 +595,7 @@ if ( ! function_exists( 'skeleton_posted_in' ) ) :
  */
 function skeleton_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
-	$tag_list = get_the_tag_list( '', ', ' );
-	if ( $tag_list ) {
-		$posted_in = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'skeleton' );
-	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
-		$posted_in = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'skeleton' );
-	} else {
-		$posted_in = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'skeleton' );
-	}
-	// Prints the string, replacing the placeholders.
-	printf(
-		$posted_in,
-		get_the_category_list( ', ' ),
-		$tag_list,
-		get_permalink(),
-		the_title_attribute( 'echo=0' )
-	);
+	echo '';
 }
 
 endif;
@@ -878,14 +863,7 @@ add_action('wp_footer', 'st_footer');
 
 if (!function_exists('st_after_footer'))  {
 	
-    function st_after_footer() {
-			echo "</div><!--/#footer-->"."\n";
-			echo "</div><!--/#wrap.container-->"."\n";
-			// Google Analytics
-			if (of_get_option('footer_scripts') <> "" ) {
-				echo '<script type="text/javascript">'.stripslashes(of_get_option('footer_scripts')).'</script>';
-			}
-    }
+   echo '';
 }
 
 
