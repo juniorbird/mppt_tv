@@ -17,16 +17,6 @@ body {
 	background-position:right bottom;
 }
 
-.page-item-31 a:before{
-   content:"";
-   float:left;
-   width:100px;
-   height:100px;
-   margin:-43px 0px 0 -150px;
-   background:url('/images/mppt_logo_small.png');
-   background-repeat: no-repeat;
-}
-
 #navigation ul li a, .menu ul li a:link, .menu ul li a:visited 	{
 	color:#2f368f; 
 	background: none;
@@ -36,12 +26,26 @@ body {
 	color:#ec3527 !important;
 }
 
-#navigation ul li 	{
+#navigation ul li	{
 	border: 3px solid #2f368f;
-	margin-right: 20px;
-	padding-right: 20px;
+	margin-left:30px !important;
 	-moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
     border-radius: 20px;
+}
+
+#navigation ul li.page-item-31	{
+   text-indent: 5000px;
+   width: 100px;
+   height: 100px;
+   overflow: none;
+   background:url('/images/mppt_logo_small.png') !important;
+   background-repeat: no-repeat;
+   background-position: 0px -100px
+   margin: 0px;
+ /*  margin-top: -23px;*/
+   margin-left: 0px !important;
+   padding: 0px;
+   border:0px;
 }
