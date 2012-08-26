@@ -1008,3 +1008,12 @@ function register_shortcodes(){
 }
 
 add_action( 'init', 'register_shortcodes');
+
+
+// Removes "Protected" title from password-protected sizzle pages 
+// From http://wordpress.org/support/topic/how-to-remove-protected-from-pw-protected-page-titles
+// For KN #384812
+add_filter('protected_title_format', 'blank');
+function blank($title) {
+       return '%s';
+}
