@@ -63,7 +63,7 @@ body {
 }
 
 #navigation ul li.page-item-31, #navigation ul li.page-item-31:before	{
-   text-indent: 5000px;
+   text-indent: -5000px;
    width: 100px;
    height: 100px;
    overflow: none;
@@ -102,4 +102,22 @@ body {
 
 .cta	{
 	padding-bottom: 10px !important;
+}
+
+.team_member {
+	padding: 7px;
+	border: 3px solid #2f368f;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    background: -moz-linear-gradient(270deg, #FFFFFF, #F1F1F1) repeat scroll 0 0 transparent;
+ 	background: -webkit-linear-gradient(270deg, #FFFFFF, #F1F1F1) repeat scroll 0 0 transparent;
+	-pie-background: linear-gradient(#FFFFFF, #F1F1F1);
+}
+
+.team_member h2	{
+	color: #444;
+	margin-top: -10px;
 }

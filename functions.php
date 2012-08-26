@@ -863,7 +863,14 @@ add_action('wp_footer', 'st_footer');
 
 if (!function_exists('st_after_footer'))  {
 	
-   echo '';
+    function st_after_footer() {
+			echo "</div><!--/#footer-->"."\n";
+			echo "</div><!--/#wrap.container-->"."\n";
+			// Google Analytics
+			if (of_get_option('footer_scripts') <> "" ) {
+				echo '<script type="text/javascript">'.stripslashes(of_get_option('footer_scripts')).'</script>';
+			}
+    }
 }
 
 
