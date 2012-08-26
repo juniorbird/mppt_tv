@@ -8,8 +8,13 @@ MPPT holds a unlimited, unrestricted, non-exclusive license to this code
 *************************************************************************/
 
 /* Use the Font, Luke! */
+h1, h2, h3, h4, h5, h6, #navigation ul li a	{
+	font-family: 'Hammersmith One', sans-serif; 
+}
+
 h1, h2, h3, h4, h5, h6	{
-font-family: 'Hammersmith One', sans-serif; }
+	color: #2f368f;
+}
 
 body {
 	background-image:url('/images/mppt_logo_big_screen.png');
@@ -20,14 +25,17 @@ body {
 #navigation ul li a, .menu ul li a:link, .menu ul li a:visited 	{
 	color:#2f368f; 
 	background: none;
+	font-size: larger;
+	font-weight: bold;
 }
 
 #navigation ul li a:hover	{
 	color:#ec3527 !important;
+	background: none !important;
 }
 
 #navigation ul li	{
-	border: 3px solid #2f368f;
+	border: 4px solid #2f368f;
 	margin-left:30px !important;
 	-moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -35,17 +43,55 @@ body {
     border-radius: 20px;
 }
 
-#navigation ul li.page-item-31	{
+#navigation ul li:before {
+   content: " ";
+   position: absolute;
+   margin: -11px;
+   z-index: -1;
+   top: 5px;
+   left: 5px;
+   right: 5px;
+   bottom: 5px;
+   	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+   border: 2px solid #ffea00;
+}
+
+#navigation ul li.page-item-31, #navigation ul li.page-item-31:before	{
    text-indent: 5000px;
    width: 100px;
    height: 100px;
    overflow: none;
-   background:url('/images/mppt_logo_small.png') !important;
-   background-repeat: no-repeat;
-   background-position: 0px -100px
    margin: 0px;
- /*  margin-top: -23px;*/
    margin-left: 0px !important;
    padding: 0px;
    border:0px;
+   outline: 0px;
+}
+
+#navigation ul li.page-item-31 a, #navigation ul li.page-item-31 a:hover 	{
+   background:url('/images/mppt_logo_small.png') !important;
+   background-repeat: no-repeat;
+   height:70px;
+   margin-top: -21px;
+}
+
+#navigation ul	{
+	background: none !important;
+	border: 0px !important;
+	box-shadow: none !important;
+	pie-box-shadow: none !important;
+}
+
+#navigation ul li a, #navigation ul li a:hover, #navigation ul li.menu_item a	{
+	text-shadow: none;
+	border-bottom: none !important;
+	margin-top: 2px;
+	background: none !important;
+}
+
+.home h1	{
+	color: #444;
 }
