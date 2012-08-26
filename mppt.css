@@ -41,6 +41,9 @@ body {
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
     border-radius: 20px;
+    background: -moz-linear-gradient(270deg, #FFFFFF, #F1F1F1) repeat scroll 0 0 transparent;
+ 	background: -webkit-linear-gradient(270deg, #FFFFFF, #F1F1F1) repeat scroll 0 0 transparent;
+	-pie-background: linear-gradient(#FFFFFF, #F1F1F1);
 }
 
 #navigation ul li:before {
@@ -69,6 +72,7 @@ body {
    padding: 0px;
    border:0px;
    outline: 0px;
+   background: none;
 }
 
 #navigation ul li.page-item-31 a, #navigation ul li.page-item-31 a:hover 	{
