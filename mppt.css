@@ -81,8 +81,8 @@ body {
 
 #navigation ul li.page-item-31 a, #navigation ul li.page-item-31 a:hover, #navigation ul li.menu-item-98 a, #navigation ul li.menu-item-98 a:hover 	{
    background:url('/images/mppt_logo_small.png') !important;
-   background-repeat: no-repeat;
-   height:70px;
+   background-repeat: no-repeat !important;
+   height:100px;
    margin-top: -21px;
 }
 
@@ -174,4 +174,58 @@ form .submit	{
 
 form .submit:hover	{
 	color: #ec3527;
+}
+
+/*Resize items to fit in mobile sizes*/
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	.home h1	{
+		font-size: 1.8em;
+		line-height: 1.1em;
+		margin-top: 20px;
+		margin-left: 5px;
+	}
+
+	body	{
+		background-size: 66%;
+	}
+
+	#navigation ul li:before	{
+		border: 0px;
+	    border-radius: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+	#navigation ul li 	{
+		padding-left: 7px !important;
+		margin-left: 5px !important;
+		margin-top: 7px;
+		border: 0px;
+		border-left: 3px solid #ffea00 !important;
+		background: #2f368f !important;
+		-moz-border-radius: 0px;
+	    -webkit-border-radius: 0px;
+	    -khtml-border-radius: 0px;
+	    border-radius: 0px;
+	}
+
+	#navigation ul li a 	{
+		padding-top: 9px !important;
+		padding-bottom: 7px !important;
+		padding-left: 20px;
+		color: #fff !important;
+	}
+
+	#navigation ul li.page-item-31, #navigation ul li.page-item-31:before, #navigation ul li.menu-item-98, #navigation ul li.menu-item-98:before	{
+		border: 0px !important;
+		background: none !important;
+		margin-bottom: 15px;
+	}
+
+	img 	{
+		width: 100% !important;
+	}
 }

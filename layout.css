@@ -99,20 +99,13 @@
 	#wrap {}
 	#header .site-desc.text {font-size: 1.25em;}
 	#navigation {margin: 10px 0px;}
-	
 	#navigation ul,
 	#navigation ul li,
 	#navigation ul li a {
 	float: none;
-	background: transparent;
-	border: none;
-	box-shadow:none;
-	-moz-box-shadow:none;
-	-webkit-box-shadow:none;
-	behavior:none;
 	}
 	
-	#navigation ul li a,
+/*	#navigation ul li a,
 	#navigation ul li.active a,
 	#navigation ul li a:hover,
 	#navigation ul li:hover a {
@@ -121,7 +114,7 @@
 	line-height: 150%;
 	background: transparent;
 	background-image: none;
-	}
+	}*/
 	
 	/* Initial reset and hide sublevels in mobile view */
 	
@@ -135,14 +128,14 @@
 		position: relative;
 		left: 0px;
 		line-height: 100%;
-		background: none;
+		/*background: none;
 		border: none;
 		border-style: none;
-		box-shadow:none;
+		box-shadow:none;*/
 		padding: 0;
 		margin: 0;
 		height: auto;
-		background-image: none;
+		/*background-image: none;*/
 	}
 	
 	/* Declare new padding for submenu items */
