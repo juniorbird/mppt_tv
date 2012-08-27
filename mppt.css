@@ -22,6 +22,9 @@ body {
 	background-position:right bottom;
 }
 
+
+/*That darned navbar! */
+
 #navigation ul li a, .menu ul li a:link, .menu ul li a:visited 	{
 	color:#2f368f; 
 	background: none;
@@ -46,6 +49,7 @@ body {
 	-pie-background: linear-gradient(#FFFFFF, #F1F1F1);
 }
 
+/*This gets the yellow outline*/
 #navigation ul li:before {
    content: " ";
    position: absolute;
@@ -96,6 +100,8 @@ body {
 	background: none !important;
 }
 
+/*Home page */
+
 .home h1	{
 	color: #444;
 }
@@ -103,6 +109,8 @@ body {
 .cta	{
 	padding-bottom: 10px !important;
 }
+
+/* Team pages */
 
 .team_member {
 	padding: 7px;
@@ -120,4 +128,50 @@ body {
 .team_member h2	{
 	color: #444;
 	margin-top: -10px;
+}
+
+/*Contact form*/
+form	{
+	background: -moz-linear-gradient(270deg, #FFFFFF, #F1F1F1) repeat scroll 0 0 transparent;
+ 	background: -webkit-linear-gradient(270deg, #FFFFFF, #F1F1F1) repeat scroll 0 0 transparent;
+	-pie-background: linear-gradient(#FFFFFF, #F1F1F1);
+	border: 1px solid gainsboro !important;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 10px;
+}
+
+form div, label, form div img	{
+	background: none !important;
+}
+
+input	{
+	background: #fff !important;
+}
+
+form h4	{
+	display: none;
+}
+
+form img 	{
+	margin-top: 20px;
+}
+
+form .submit	{
+	text-align: right;
+	border: 3px solid #ffea00 !important;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 15px;
+	margin-left: 565px;
+	margin-top: 20px;
+	color: #fff !important;
+	text-shadow: none !important;
+	background: #2f368f !important;
+}
+
+form .submit:hover	{
+	color: #ec3527;
 }
