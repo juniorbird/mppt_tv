@@ -7,6 +7,9 @@ All rights reserved
 MPPT holds a unlimited, unrestricted, non-exclusive license to this code
 *************************************************************************/
 
+/* Nifty red background on uppder link area */
+
+
 /* Use the Font, Luke! */
 h1, h2, h3, h4, h5, h6, #navigation ul li a	{
 	font-family: 'Hammersmith One', sans-serif; 
@@ -20,52 +23,55 @@ body {
 	background-image:url('/images/mppt_logo_big_screen.png');
 	background-repeat:no-repeat;
 	background-position:right bottom;
+	margin-top: 0px !important;
 }
 
 
 /*That darned navbar! */
 
+#header	{
+	margin: 0px !important;
+	height:	0px;
+}
+
 #navigation ul li a, .menu ul li a:link, .menu ul li a:visited 	{
-	color:#2f368f; 
+	color:#fff; 
 	background: none;
 	font-size: larger;
 	font-weight: bold;
 }
 
 #navigation ul li a:hover	{
-	color:#ec3527 !important;
+	color:#2f368f !important;
 	background: none !important;
 }
 
-#navigation ul li	{
-	border: 4px solid #2f368f;
-	margin-left:30px !important;
-	-moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -khtml-border-radius: 20px;
-    border-radius: 20px;
-    background: -moz-linear-gradient(270deg, #FFFFFF, #F1F1F1) repeat scroll 0 0 transparent;
- 	background: -webkit-linear-gradient(270deg, #FFFFFF, #F1F1F1) repeat scroll 0 0 transparent;
-	-pie-background: linear-gradient(#FFFFFF, #F1F1F1);
+
+#navigation	{
+	margin-top: 0px;
+	padding-top: 22px;
+	padding-left: 12px;
+ 	background: #e31936;
+ 	border-bottom-right-radius: 20px;
+ 	border-bottom-left-radius: 20px;
+ 	-moz-border-bottom-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -khtml-border-bottom-right-radius: 20px;
+ 	-moz-border-bottom-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -khtml-border-bottom-left-radius: 20px;
 }
 
-/*This gets the yellow outline*/
-#navigation ul li:before {
-   content: " ";
-   position: absolute;
-   margin: -11px;
-   z-index: -1;
-   top: 5px;
-   left: 5px;
-   right: 5px;
-   bottom: 5px;
-   	-moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -khtml-border-radius: 20px;
-    border-radius: 20px;
-   border: 2px solid #ffea00;
+#navigation ul 	{
+	margin-bottom: -10px !important;
 }
 
+#navigation ul li a 	{
+	display: inline-block;
+	margin-top: 40px !important;
+}
+
+/* Replace the home button with a logo */
 #navigation ul li.page-item-31, #navigation ul li.page-item-31:before, #navigation ul li.menu-item-98, #navigation ul li.menu-item-98:before	{
    text-indent: -5000px;
    width: 100px;
@@ -83,7 +89,7 @@ body {
    background:url('/images/mppt_logo_small.png') !important;
    background-repeat: no-repeat !important;
    height:100px;
-   margin-top: -21px;
+   margin-top: -21px !important;
 }
 
 #navigation ul	{
@@ -160,7 +166,7 @@ form img 	{
 
 form .submit	{
 	text-align: right;
-	border: 3px solid #ffea00 !important;
+	border: 3px solid #ffe800 !important;
 	-moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
@@ -173,7 +179,7 @@ form .submit	{
 }
 
 form .submit:hover	{
-	color: #ec3527;
+	color: #e31936;
 }
 
 /*Resize items to fit in mobile sizes*/
@@ -191,6 +197,12 @@ form .submit:hover	{
 		background-size: 66%;
 	}
 
+
+	#navigation{
+		background: none;
+		margin-bottom: 50px !important;
+	}
+
 	#navigation ul li:before	{
 		border: 0px;
 	    border-radius: 0px;
@@ -202,9 +214,8 @@ form .submit:hover	{
 	#navigation ul li 	{
 		padding-left: 7px !important;
 		margin-left: 5px !important;
-		margin-top: 7px;
 		border: 0px;
-		border-left: 3px solid #ffea00 !important;
+		border-left: 3px solid #ffe800 !important;
 		background: #2f368f !important;
 		-moz-border-radius: 0px;
 	    -webkit-border-radius: 0px;
@@ -216,13 +227,18 @@ form .submit:hover	{
 		padding-top: 9px !important;
 		padding-bottom: 7px !important;
 		padding-left: 20px;
+		margin-bottom: -25px;
 		color: #fff !important;
+	}
+
+	#navigation ul li .active a, #navigation ul li .current_page_item a	{
+		color: #ffe800 !important;
 	}
 
 	#navigation ul li.page-item-31, #navigation ul li.page-item-31:before, #navigation ul li.menu-item-98, #navigation ul li.menu-item-98:before	{
 		border: 0px !important;
 		background: none !important;
-		margin-bottom: 15px;
+		margin-bottom: -25px !important;
 	}
 
 	img 	{
